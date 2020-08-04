@@ -28,13 +28,13 @@ class App extends React.Component {
             ...snapShot.data()
           });
         });
+        
+      } else {
+        setCurrentUser(userAuth);
+      }
 
-        console.log(this.state)
-
-      } 
-      
-      setCurrentUser(userAuth);
     });
+
   }
 
   componentWillUnmount() {
